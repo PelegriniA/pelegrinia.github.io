@@ -68,12 +68,25 @@ h2{
     font-size:3rem;
     letter-spacing: .25rem;
     font-weight: normal;
+    text-transform: uppercase;
+    margin: 0;
+    color:darkred;
+    text-shadow:.09375rem .09375rem .09375rem #000;
+    font-family:'Alfa Slab One', Garamond, serif;
+    text-align:center;
+
 } 
 
 h3{
     font-size:2rem;
+    letter-spacing: .25rem;
     font-weight: normal;
     text-shadow: none;
+    text-transform: uppercase;
+    margin: 0;
+    color:rgb(0, 86, 247);
+    font-family:'Alfa Slab One', Garamond, serif;
+    text-align:center;
 }
 
 h4{
@@ -81,8 +94,19 @@ h4{
     letter-spacing: .25rem;
     padding-bottom: 1.125rem;
     font-weight: normal;
+    text-transform: uppercase;
+    margin: 0;
+    color:darkred;
+    text-shadow:.09375rem .09375rem .09375rem #000;
+    font-family:'Alfa Slab One', Garamond, serif;
+    text-align:center;
 }
-
+h4>span{
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
 h5{
     font-size:1rem;
     margin-top:.25rem;
@@ -91,7 +115,9 @@ h5{
     padding-left: .5rem;
     padding-right: .5rem;
     background-color: #333;
-    
+    color: #fff;
+    font-weight: normal;
+    text-align:center;  
 }
 
 
@@ -127,7 +153,8 @@ img {
     max-width: 50rem;
 }
 figcaption {
-    padding-top: 8rem;
+    padding-top: .5rem;
+    text-align: right;
 }
 
 /* Footer */
@@ -138,7 +165,7 @@ footer {
     padding-left: 1rem;
     padding-right: 1rem;
     border-top-width: 2rem;
-    border-style: solid; color: #333;
+    border-top-style: solid; color: #333
 }
 
 
