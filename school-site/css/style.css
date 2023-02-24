@@ -113,16 +113,16 @@ h2+p{
 }
 p {
     letter-spacing: .031rem;
-    font-size: .75rem;
+    font-size: 1rem;
     word-spacing: .125rem;
 }
 li {
     letter-spacing: .031rem;
-    font-size: .75rem;
+    font-size: 1rem;
     word-spacing: .125rem;
 }
 figcaption {
-    font-size: .75rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
 }   
 
