@@ -105,8 +105,8 @@ h2{
     letter-spacing: .125rem;
     font-family: Josefinslab, serif;
     font-size:1.5rem;
-    margin: 1.125rem;
-    text-align:center;
+    /*margin: 1.125rem;*/
+    /*text-align:center;*/
 } 
 h2+p{
     text-indent: 1.5rem;
@@ -128,7 +128,7 @@ figcaption {
 
 /* Link Styling */
 a {
-text-decoration: none;
+outline: none;
 }
 a:link {
     Color: #33658A
@@ -168,6 +168,7 @@ nav {
     margin-top: .25rem;
 }
 nav a {
+    text-decoration: none;
     outline: none;
     display: inline-block;
     width: 100%;
