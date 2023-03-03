@@ -1,0 +1,296 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+
+/* General setup */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size:16px;
+}
+
+body {
+    margin: 1.5rem auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width:90%;
+    min-width:56.25rem;
+}
+
+/* Imported Typfaces */
+@font-face {
+    font-family:Montserrat;
+    src: url(../fonts/sans-serif/montserrat-regular.ttf) format('truetype');
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face {
+    font-family:Josefinslab;
+    src: url(../fonts/serif/josefinslab-regular.ttf) format('truetype');
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face {
+    font-family:roboto;
+    src: url(../fonts/sans-serif/roboto-regular.ttf) format('truetype');
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face {
+    font-family:razhaone;
+    src: url(../fonts/serif/rozhaone-regular.ttf) format('truetype');
+    font-style:normal;
+    font-weight:normal;
+}
+/* Typography Styles */
+h1 {
+    letter-spacing: .125rem;
+    font-family: roboto, serif;
+    font-size:4.75rem;
+    margin: 1.125rem;
+    text-align:center;
+    transform: rotate(-2deg);
+}
+h2{
+    letter-spacing: .125rem;
+    font-family: Montserrat, serif;
+    font-size:1.5rem;
+    /*margin: 1.125rem;*/
+    text-align:left
+}
+h3{
+    letter-spacing: .125rem;
+    font-family: Montserrat, serif;
+    font-size:1rem;
+    /*margin: 1.125rem;*/
+    text-align:left
+}
+p {
+    font-family: Montserrat, serif;
+    letter-spacing: .031rem;
+    font-size: 1rem;
+    word-spacing: .125rem;
+}
+.highlight {
+    padding: .25rem;
+    letter-spacing: .031rem;
+    border: .063; color: rgb(245, 244, 244);
+    background-color: crimson;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+nav {
+    font-size: 2.3rem;
+    border-top: 0.05rem solid;
+    border-bottom: 0.05rem solid;
+    padding: 0 5%;
+	margin: .125rem
+}
+nav a {
+    color: rgba(39, 56, 59, 0.781);
+    font-size:2rem;
+    font-weight:bold;
+    display:inline-block;
+    padding:1rem 7rem 2rem 0;
+}
+nav a:nth-child(even):hover {
+    color:black;
+    text-transform: uppercase;
+    text-decoration-line: line-through;
+    transform: rotate(3deg);
+}
+nav a:nth-child(odd):hover {
+    color:black;
+    text-transform: uppercase;
+    text-decoration-line: line-through;
+    transform: rotate(-3deg);
+}
+
+/* Layout */
+
+main {
+    overflow:auto;
+    min-width:45rem;
+    max-width:90%;
+    margin:auto;
+    padding-bottom: 1rem;
+}
+.mainsection {
+    display: flex
+}
+.main-section {
+    grid-gap: 1rem;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+aside {
+    /*width: 25%;*/
+    /*margin: 3rem;*/
+    padding-left: 0.5rem;
+    grid-column: 2 / 3;
+    grid-row: 1;
+    border-left: .1rem solid black;
+}
+aside p {
+    padding-bottom: .5rem;
+    border-bottom: .06rem solid black;
+    font-size: 0.8rem;
+}
+
+article {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+.button {
+    padding: .25rem;
+    letter-spacing: .125rem;
+    border: .063rem; color: rgb(218, 213, 213);
+    background-color: rgb(27, 17, 155);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;    
+    font-family: robotoslab, serif;
+    font-weight: bold;
+    font-size:1.5rem;
+    margin: auto;
+}
+.expand {
+    display: flex;
+    font-size: 0.3rem;
+    padding: .3rem 0 .3rem 0;
+}
+.copyright {
+    text-align: right;
+}
+.copyright1 {
+    text-align: left;
+}
+
+/* Images and Figures */
+figure {
+    width:87.5%;
+    margin:0
+}
+.article-image {
+    justify-content: left;
+    width: 38%;
+    margin: 0 1rem 0.5rem 0;
+    float: left;
+}
+.article-image + p {
+    padding: 0rem;
+    margin-top: 0rem;
+}
+
+ .subsection { 
+    grid-column-gap:0.015rem;
+    grid-template-columns:repeat(auto-fit, minmax(10rem, 3fr));
+    display:grid;
+    margin-top:2rem;
+    margin-bottom:1.5rem;
+    padding:0rem;
+}
+.subsection figure {
+    margin: 0 0.25rem;
+    background-color: bisque;  
+}
+
+.subsection img {
+    padding-bottom:0rem;
+    min-width:3rem;
+}
+  
+.subsection figcaption {
+    font-size:1rem;
+    padding:1rem;
+}
+
+img {
+    width: 100%;
+}
+
+/* Footer Styles */
+footer {
+    text-align:left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
