@@ -214,9 +214,7 @@ article {
 }
 .copyright {
     text-align: right;
-}
-.copyright1 {
-    text-align: left;
+    font-size: .75rem;
 }
 
 /* Images and Figures */
