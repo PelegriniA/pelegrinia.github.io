@@ -181,6 +181,8 @@ aside {
     grid-column: 2 / 3;
     grid-row: 1;
     border-left: .1rem solid black;
+    width: 80%;
+    height: auto;
 }
 aside p {
     padding-bottom: .5rem;
@@ -211,6 +213,7 @@ article {
     display: flex;
     font-size: 0.3rem;
     padding: .3rem 0 .3rem 0;
+    text-decoration: none;
 }
 .copyright {
     text-align: right;
@@ -219,12 +222,14 @@ article {
 
 /* Images and Figures */
 figure {
-    width:87.5%;
+    width:70.5%;
+    height: auto;
     margin:0
 }
 .article-image {
     justify-content: left;
-    width: 38%;
+    width: 33%;
+    height: auto;
     margin: 0 1rem 0.5rem 0;
     float: left;
 }
