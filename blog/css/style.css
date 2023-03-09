@@ -224,6 +224,7 @@ article {
 /* Images and Figures */
 figure {
     width:70.5%;
+    filter: contrast(100%);
     height: auto;
     margin:0
 }
@@ -233,6 +234,7 @@ figure {
     height: auto;
     margin: 0 1rem 0.5rem 0;
     float: left;
+    filter: contrast(100%)
 }
 .article-image + p {
     padding: 0rem;
@@ -255,6 +257,7 @@ figure {
 .subsection img {
     padding-bottom:0rem;
     min-width:3rem;
+
 }
   
 .subsection figcaption {
