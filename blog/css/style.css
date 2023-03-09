@@ -132,13 +132,14 @@ p {
 }
 nav {
     font-size: 2.3rem;
+    color: rgb(0, 0, 0);
     border-top: 0.05rem solid;
     border-bottom: 0.05rem solid;
     padding: 0 5%;
 	margin: .125rem
 }
 nav a {
-    color: rgba(39, 56, 59, 0.781);
+    color: rgb(60, 12, 172);
     font-size:2rem;
     font-weight:bold;
     display:inline-block;
@@ -228,7 +229,7 @@ figure {
 }
 .article-image {
     justify-content: left;
-    width: 28%;
+    width: 30%;
     height: auto;
     margin: 0 1rem 0.5rem 0;
     float: left;
